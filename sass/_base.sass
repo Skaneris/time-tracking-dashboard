@@ -4,6 +4,7 @@ body
 .container
     margin: 0 auto
     padding: 16px
+    min-width: 310px
     max-width: $Mobile
 .user
     width: 100%
@@ -40,6 +41,9 @@ body
             outline: none
             cursor: pointer
             &[data-active="1"]
+                color: #FFFFFF
+            &:hover
+                transition: 0.3s
                 color: #FFFFFF
 .card
     margin: 1.6rem 0 3.6rem 0
@@ -101,3 +105,14 @@ body
         & div[data-type="Work-prev"]
             font-size: 0.8rem
             color: $Pale_Blue
+    &.work
+    &.play
+        background: url(../images/icon-play.svg) 90% -30% no-repeat $Soft_blue
+    &.study
+        background: url(../images/icon-study.svg) 90% -30% no-repeat $Light_red
+    &.exercise
+        background: url(../images/icon-exercise.svg) 90% -10% no-repeat $Lime_green
+    &.social
+        background: url(../images/icon-social.svg) 90% -110% no-repeat $Violet
+    &.self-care
+        background: url(../images/icon-self-care.svg) 90% -40% no-repeat $Soft_orange

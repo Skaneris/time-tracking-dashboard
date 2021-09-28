@@ -77,6 +77,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 16px;
+  min-width: 310px;
   max-width: 375px;
 }
 
@@ -140,6 +141,12 @@ body {
 }
 
 .user__nav button[data-active="1"] {
+  color: #FFFFFF;
+}
+
+.user__nav button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #FFFFFF;
 }
 
@@ -241,4 +248,24 @@ body {
 .card__bottom div[data-type="Work-prev"] {
   font-size: 0.8rem;
   color: #bdc1ff;
+}
+
+.card.play {
+  background: url(../images/icon-play.svg) 90% -30% no-repeat #56c2e6;
+}
+
+.card.study {
+  background: url(../images/icon-study.svg) 90% -30% no-repeat #ff5c7c;
+}
+
+.card.exercise {
+  background: url(../images/icon-exercise.svg) 90% -10% no-repeat #4acf81;
+}
+
+.card.social {
+  background: url(../images/icon-social.svg) 90% -110% no-repeat #7536d3;
+}
+
+.card.self-care {
+  background: url(../images/icon-self-care.svg) 90% -40% no-repeat #f1c65b;
 }
