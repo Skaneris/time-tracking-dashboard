@@ -1,6 +1,10 @@
 @import 'variables'
 body
+    height: 100vh
     background: $Very_dark_blue
+    display: flex
+    justify-content: center
+    align-items: center
 .container
     margin: 0 auto
     padding: 1rem
@@ -8,7 +12,7 @@ body
     max-width: $Mobile
     @media screen and ( min-width: $BreakPoint )
         width: 100%
-        max-width: $Desktop
+        max-width: 1000px
         display: flex
         justify-content: flex-start
         gap: 1rem
@@ -33,7 +37,8 @@ body
         span
             font-size: 0.8rem
         @media screen and ( min-width: $BreakPoint )
-            font-size: 2rem
+            font-size: 2.2rem
+            font-weight: 100
     &__avatar
         width: 80px
         height: 80px
@@ -42,9 +47,9 @@ body
         img
             width: 100%
         @media screen and ( min-width: $BreakPoint )
-            flex: 0 0 100px
-            width: 100px
-            height: 100px
+            flex: 0 0 90px
+            width: 70px
+            height: 70px
     &__nav
         padding: 1.6rem 1rem
         display: flex
@@ -118,7 +123,7 @@ body
             font-weight: normal
             font-size: 1rem
         @media screen and ( min-width: $BreakPoint )
-            margin: 0 0 1.4rem 0
+            margin: 0 0 1rem 0
         button
             background: none
             border: none
@@ -142,6 +147,8 @@ body
         @media screen and ( min-width: $BreakPoint )
             display: block
             .left
+                font-size: 3rem
+                font-weight: 100
                 margin: 0 0 0.7rem 0
     &.work
     &.play

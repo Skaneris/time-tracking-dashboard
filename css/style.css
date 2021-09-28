@@ -71,7 +71,17 @@ body {
 }
 
 body {
+  height: 100vh;
   background: #0f1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
@@ -84,7 +94,7 @@ body {
 @media screen and (min-width: 840px) {
   .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1000px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141,7 +151,8 @@ body {
 
 @media screen and (min-width: 840px) {
   .user__name {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 100;
   }
 }
 
@@ -159,10 +170,10 @@ body {
 @media screen and (min-width: 840px) {
   .user__avatar {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100px;
-            flex: 0 0 100px;
-    width: 100px;
-    height: 100px;
+        -ms-flex: 0 0 90px;
+            flex: 0 0 90px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -299,7 +310,7 @@ body {
 
 @media screen and (min-width: 840px) {
   .card__top {
-    margin: 0 0 1.4rem 0;
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -345,6 +356,8 @@ body {
     display: block;
   }
   .card__bottom .left {
+    font-size: 3rem;
+    font-weight: 100;
     margin: 0 0 0.7rem 0;
   }
 }
