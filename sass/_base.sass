@@ -1,4 +1,43 @@
 @import 'variables'
+body
+    background: $Very_dark_blue
 .container
     margin: 0 auto
+    padding: 16px
     max-width: $Mobile
+.user
+    width: 100%
+    background: $Dark_blue
+    border-radius: 1rem
+    &__title
+        padding: 1.6rem
+        background: $Blue
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        gap: 1.2rem
+        border-radius: 1rem
+    &__name
+        color: #FFFFFF
+        span
+            font-size: 0.8rem
+    &__avatar
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        border: 2px solid #FFFFFF
+        img
+            width: 100%
+    &__nav
+        padding: 1.6rem 1rem
+        display: flex
+        justify-content: space-around
+        button
+            background: none
+            font-size: inherit
+            color: $Desaturated_blue
+            border: none
+            outline: none
+            cursor: pointer
+            &[data-active="1"]
+                color: #FFFFFF
