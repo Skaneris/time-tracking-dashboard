@@ -6,10 +6,17 @@ body
     padding: 16px
     min-width: 310px
     max-width: $Mobile
+    @media screen and ( min-width: $BreakPoint )
+        max-width: $Desktop
+        display: flex
+        justify-content: flex-start
+        gap: 1rem
 .user
     width: 100%
     background: $Dark_blue
     border-radius: 1rem
+    @media screen and ( min-width: $BreakPoint )
+        flex: 0 0 25%
     &__title
         padding: 1.6rem
         background: $Blue
@@ -18,10 +25,14 @@ body
         align-items: center
         gap: 1.2rem
         border-radius: 1rem
+        @media screen and ( min-width: $BreakPoint )
+            display: block
     &__name
         color: #FFFFFF
         span
             font-size: 0.8rem
+        @media screen and ( min-width: $BreakPoint )
+            font-size: 2rem
     &__avatar
         width: 80px
         height: 80px
@@ -29,10 +40,16 @@ body
         border: 2px solid #FFFFFF
         img
             width: 100%
+        @media screen and ( min-width: $BreakPoint )
+            flex: 0 0 100px
+            width: 100px
+            height: 100px
     &__nav
         padding: 1.6rem 1rem
         display: flex
         justify-content: space-around
+        @media screen and ( min-width: $BreakPoint )
+            display: block
         button
             background: none
             font-size: inherit
@@ -45,6 +62,15 @@ body
             &:hover
                 transition: 0.3s
                 color: #FFFFFF
+            @media screen and ( min-width: $BreakPoint )
+                margin: 10px 0
+                display: block
+.cards
+    @media screen and ( min-width: $BreakPoint )
+        display: flex
+        flex-wrap: wrap
+        align-items: stretch
+        grid-gap: 1rem
 .card
     margin: 1.6rem 0 3.6rem 0
     padding: 3.6rem 1.6rem 3.6rem 1.6rem
@@ -53,6 +79,10 @@ body
     background: url(../images/icon-work.svg) 90% -60% no-repeat $Light_red_w
     border-radius: 1rem
     position: relative
+    @media screen and ( min-width: $BreakPoint )
+        margin: 0 0 2rem 0
+        padding: 3.6rem 1.6rem 6.6rem 1.6rem
+        flex: 1 1 30%
     &::before, &::after
         content: ""
         width: 100%
@@ -85,6 +115,8 @@ body
         h4
             font-weight: normal
             font-size: 1rem
+        @media screen and ( min-width: $BreakPoint )
+            margin: 0 0 1.4rem 0
         button
             background: none
             border: none
@@ -105,6 +137,10 @@ body
         .right
             font-size: 0.8rem
             color: $Pale_Blue
+        @media screen and ( min-width: $BreakPoint )
+            display: block
+            .left
+                margin: 0 0 0.7rem 0
     &.work
     &.play
         background: url(../images/icon-play.svg) 90% -30% no-repeat $Soft_blue

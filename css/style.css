@@ -81,10 +81,31 @@ body {
   max-width: 375px;
 }
 
+@media screen and (min-width: 840px) {
+  .container {
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
 .user {
   width: 100%;
   background: #1c1f4a;
   border-radius: 1rem;
+}
+
+@media screen and (min-width: 840px) {
+  .user {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
 }
 
 .user__title {
@@ -103,12 +124,24 @@ body {
   border-radius: 1rem;
 }
 
+@media screen and (min-width: 840px) {
+  .user__title {
+    display: block;
+  }
+}
+
 .user__name {
   color: #FFFFFF;
 }
 
 .user__name span {
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 840px) {
+  .user__name {
+    font-size: 2rem;
+  }
 }
 
 .user__avatar {
@@ -122,6 +155,16 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 840px) {
+  .user__avatar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .user__nav {
   padding: 1.6rem 1rem;
   display: -webkit-box;
@@ -129,6 +172,12 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (min-width: 840px) {
+  .user__nav {
+    display: block;
+  }
 }
 
 .user__nav button {
@@ -150,6 +199,27 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 840px) {
+  .user__nav button {
+    margin: 10px 0;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    grid-gap: 1rem;
+  }
+}
+
 .card {
   margin: 1.6rem 0 3.6rem 0;
   padding: 3.6rem 1.6rem 3.6rem 1.6rem;
@@ -158,6 +228,16 @@ body {
   background: url(../images/icon-work.svg) 90% -60% no-repeat #ff8c66;
   border-radius: 1rem;
   position: relative;
+}
+
+@media screen and (min-width: 840px) {
+  .card {
+    margin: 0 0 2rem 0;
+    padding: 3.6rem 1.6rem 6.6rem 1.6rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+  }
 }
 
 .card::before, .card::after {
@@ -213,6 +293,12 @@ body {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 840px) {
+  .card__top {
+    margin: 0 0 1.4rem 0;
+  }
+}
+
 .card__top button {
   background: none;
   border: none;
@@ -248,6 +334,15 @@ body {
 .card__bottom .right {
   font-size: 0.8rem;
   color: #bdc1ff;
+}
+
+@media screen and (min-width: 840px) {
+  .card__bottom {
+    display: block;
+  }
+  .card__bottom .left {
+    margin: 0 0 0.7rem 0;
+  }
 }
 
 .card.play {
