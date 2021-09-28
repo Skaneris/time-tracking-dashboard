@@ -14,8 +14,6 @@ async function fetchData(url) {
 }
 
 function setData(type) {
-    const categories = ['Work', 'Play', 'Study', 'Exercise', 'Social', 'Self Care']
-
     data.map(item => {
         const tf = nav.querySelector('button[data-active="1"]').dataset.type
         document.querySelector(`div[data-type="${item.title}"]`).innerHTML = item.timeframes[tf].current + 'hrs'
