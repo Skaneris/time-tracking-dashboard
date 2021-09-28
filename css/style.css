@@ -142,3 +142,101 @@ body {
 .user__nav button[data-active="1"] {
   color: #FFFFFF;
 }
+
+.card {
+  margin: 1.6rem 0 3.6rem 0;
+  padding: 3.6rem 1.6rem 0 1.6rem;
+  width: 100%;
+  height: 100px;
+  background: url(../images/icon-work.svg) 90% -60% no-repeat #ff8c66;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.card::before, .card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.card::before {
+  top: 0;
+  z-index: 1;
+}
+
+.card::after {
+  top: 2rem;
+  background: #1c1f4a;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card:hover::after {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #3a4198;
+}
+
+.card__body {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.card__top {
+  margin: 0 0 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__top h4 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.card__top button {
+  background: none;
+  border: none;
+  outline: none;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.card__top button:hover svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #FFFFFF;
+}
+
+.card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__bottom div[data-type="Work"] {
+  font-size: 1.6rem;
+}
+
+.card__bottom div[data-type="Work-prev"] {
+  font-size: 0.8rem;
+  color: #bdc1ff;
+}
