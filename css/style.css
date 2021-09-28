@@ -240,12 +240,12 @@ body {
           align-items: center;
 }
 
-.card__bottom div[data-type="Work"] {
+.card__bottom .left {
   font-size: 2rem;
   font-weight: 400;
 }
 
-.card__bottom div[data-type="Work-prev"] {
+.card__bottom .right {
   font-size: 0.8rem;
   color: #bdc1ff;
 }
