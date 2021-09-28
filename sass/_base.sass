@@ -3,10 +3,11 @@ body
     background: $Very_dark_blue
 .container
     margin: 0 auto
-    padding: 16px
+    padding: 1rem
     min-width: 310px
     max-width: $Mobile
     @media screen and ( min-width: $BreakPoint )
+        width: 100%
         max-width: $Desktop
         display: flex
         justify-content: flex-start
@@ -67,6 +68,7 @@ body
                 display: block
 .cards
     @media screen and ( min-width: $BreakPoint )
+        flex: 1 1 auto
         display: flex
         flex-wrap: wrap
         align-items: stretch

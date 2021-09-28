@@ -76,13 +76,14 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 16px;
+  padding: 1rem;
   min-width: 310px;
   max-width: 375px;
 }
 
 @media screen and (min-width: 840px) {
   .container {
+    width: 100%;
     max-width: 1440px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -208,6 +209,9 @@ body {
 
 @media screen and (min-width: 840px) {
   .cards {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
