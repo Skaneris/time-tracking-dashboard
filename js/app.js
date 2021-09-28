@@ -27,7 +27,7 @@ function renderCards() {
 }
 
 async function getData() {
-    data = await fetchData('/data.json');
+    data = await fetchData('/time-tracking-dashboard/data.json');
     setData('daily')
 }
 
